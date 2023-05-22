@@ -22,7 +22,7 @@ copyright = "&copy; 2023, Gabriel Kressin Palacios"
   header_subtitle = "What are the algorithms of the mind?" # Your header subtitle
   home_image = "/headshot.sq.png"          # Path to header image starting from the static directory
   recent_posts = 5                           # Max amount of recent posts to show
-  mainSections = ["posts", "post", "blog"]   # Main sections to include in recent posts
+  mainSections = ["poster"]   # Main sections to include in recent posts
   [params.style]                             # CSS style overrides
     backgroundColor = "#f8f9fa"
     homeImageBorderColor = "#ffffff"

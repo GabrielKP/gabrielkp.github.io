@@ -18,7 +18,7 @@ author = "Gabriel Kressin Palacios"
 - Representations in the Mind and Artificial Neural Networks
 - Algorithmic descriptions of Event Cognition / Situation Models
 
-# Vision
+## Vision
 
 I am dedicated to become a researcher in the intersection of Computer Science,
 Cognitive Science, Psychology and Neuroscience to understand the workings of the human mind, the usage of that knowledge in Computer Science and resulting from that, to create technologies improving our living conditions.
@@ -30,7 +30,7 @@ learning about new topics and absorbing all advice, experiences and lessons I ca
 
 Full of ideas, ambitious plans and a probably hopelessly overly idealistic worldview I am trying to reach for the stars. Let's see what the future holds.
 
-# Fun facts
+## Fun 'facts'
 
 - People tell me I look shorter on Zoom than in Real Life.
 - Yes, I started growing my hair before Corona.

@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html
+  lang="{{ if .Site.LanguageCode }}{{ .Site.LanguageCode }}{{ else }}en{{ end }}"
+>
+  {{- partial "head.html" . -}}
+  <body>
+    <div id="content-poster" class="mx-auto">{{ .Content}}</div>
+    {{- partial "footer.html" . -}}
+  </body>
+</html>
