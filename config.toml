@@ -1,7 +1,6 @@
 baseURL = 'http://gabrielkp.github.io'
 languageCode = 'en-us'
 title = 'Gabriel Kressin Palacios'
-theme = 'devise'
 relativeURLs = true
 enableEmoji = true
 copyright = "&copy; 2023, Gabriel Kressin Palacios"
