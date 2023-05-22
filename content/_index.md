@@ -6,7 +6,7 @@ author = "Gabriel Kressin Palacios"
 +++
 
 - PhD Student @Johns Hopkins University in the [Honey lab](https://www.honeylab.org)
-- Brodly interested in the different topics within Psychology / Computer Science / Cognitive Science and Neuroscience
+- Broadly interested in the different topics within Psychology / Computer Science / Cognitive Science and Neuroscience
 - Undergrad in Computer Science [@Freie Universität Berlin](https://www.mi.fu-berlin.de/en/inf/index.html)
 - Previously Student Assistant doing Relation Extraction (NLP) at [DFKI](https://www.dfki.de/en/web)
 
@@ -20,7 +20,7 @@ author = "Gabriel Kressin Palacios"
 
 ## Vision
 
-I am dedicated to become a researcher in the intersection of Computer Science,
+I am dedicated becoming a researcher in the intersection of Computer Science,
 Cognitive Science, Psychology and Neuroscience to understand the workings of the human mind, the usage of that knowledge in Computer Science and resulting from that, to create technologies improving our living conditions.
 
 I am deeply passionate about discovering and implementing the algorithms behind perception, cognition and behaviour.
@@ -28,7 +28,7 @@ I am deeply passionate about discovering and implementing the algorithms behind 
 Being in the middle of forming the foundation of my future scientific career, I am
 learning about new topics and absorbing all advice, experiences and lessons I can.
 
-Full of ideas, ambitious plans and a probably hopelessly overly idealistic worldview I am trying to reach for the stars. Let's see what the future holds.
+Full of ideas, ambitious plans and a probably hopelessly overly idealistic worldview, I am trying to reach for the stars. Let's see what the future holds.
 
 ## Fun 'facts'
 
@@ -37,16 +37,15 @@ Full of ideas, ambitious plans and a probably hopelessly overly idealistic world
 - No, I still have not found the right hair routine.
 - I was (second degree) uncle before I was born.
 - Because I grew up bilingually, I sometimes confuse numbers in the range of
-  60-99: in German you say the last position first, in Spanish it is the other way
+  60-99: in German you say the last position first. In Spanish it is the other way
   around (It is interesting that I only noticed the phenomenon for numbers >60).
 - I seem to be bad in _deciphering_ what people say, even though my
-  hearing itself is good (according to doctors...).
+  hearing itself is good (according to some doctor in Berlin...).
 - [The best Hot Chocolate place in Berlin](https://www.berliner-kaffeeroesterei.de/).
 - Yes, I like the US
 - Put on 80/90/00s music and I _dance, dance, dance_.
 - My metabolism does not abide by the laws of the universe, if I eat a piece of
   cake I gain double of it's weight the next day.
-- Luckily I lose weight as fast as I gain it.
+- Luckily, I lose weight as fast as I gain it.
 - Yes, my phenotype is the analog of mixing coffee with milk.
 - I am bad with names AND faces, but I am not prosopagnosic.
-- Is it a science if you have to put 'science' into the fields name?
