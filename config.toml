@@ -34,6 +34,9 @@ copyright = "&copy; 2023, Gabriel Kressin Palacios"
   [[params.social]]
     fa_icon = "fab fa-linkedin-in fa-1x"
     href = "https://www.linkedin.com/in/gabrielkressin/"
+  [[params.social]]
+    fa_icon = "fa fa-envelope fa-1x"
+    href = "mailto:gkressi1@jhu.edu"
 
 [markup.goldmark.renderer]
   unsafe = true # Allow HTML in md files

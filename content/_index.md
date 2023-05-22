@@ -1,5 +1,5 @@
 +++
-title = "Home Gabriel Kressin Palacios"
+title = "Home"
 description = "About Gabriel"
 date = "2023-05-21"
 author = "Gabriel Kressin Palacios"
@@ -8,7 +8,7 @@ author = "Gabriel Kressin Palacios"
 - PhD Student @Johns Hopkins University in the [Honey lab](https://www.honeylab.org)
 - Brodly interested in the different topics within Psychology / Computer Science / Cognitive Science and Neuroscience
 - Undergrad in Computer Science [@Freie Universität Berlin](https://www.mi.fu-berlin.de/en/inf/index.html)
-- Experience with Relation Extraction (NLP) at [DFKI](https://www.dfki.de/en/web)
+- Previously Student Assistant doing Relation Extraction (NLP) at [DFKI](https://www.dfki.de/en/web)
 
 ## Interests
 
