@@ -20,7 +20,7 @@ copyright = "&copy; 2023, Gabriel Kressin Palacios"
   description = "Personal Website | Gabriel Kressin Palacios"      # Your meta description of the site
   header_title = "Gabriel Kressin Palacios"                 # Your header title
   header_subtitle = "What are the algorithms of the mind?" # Your header subtitle
-  home_image = "/headshot.sq.png"          # Path to header image starting from the static directory
+  home_image = "/steg.sq.jpg"          # Path to header image starting from the static directory
   recent_posts = 6                           # Max amount of recent posts to show
   mainSections = ["poster"]   # Main sections to include in recent posts
   [params.style]                             # CSS style overrides

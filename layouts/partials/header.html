@@ -1,8 +1,8 @@
 <header class="container mt-sm-5 mt-4 mb-4 mt-xs-1">
     <div class="row">
-        <div class="col-sm-4 col-12 text-sm-right text-center pt-sm-4">
+        <div class="col-sm-5 col-12 text-sm-right text-center pt-sm-0">
             <a href="/" class="text-decoration-none">
-                <img id="home-image" class="rounded"
+                <img id="home-image" class="rounded-circle"
                     {{ if (and (isset .Site.Params "home_image") (fileExists (printf "static/%s" (strings.TrimPrefix "/" .Site.Params.home_image)))) }}
                         {{ if hasPrefix .Site.Params.home_image "/" }}
                             src="{{ .Site.Params.home_image }}"
@@ -15,8 +15,8 @@
                 />
             </a>
         </div>
-        <div class="col-sm-8 col-12 text-sm-left text-center">
-            <h2 class="m-0 mb-2 mt-4">
+        <div class="col-sm-7 col-12 text-sm-left text-center">
+            <h2 class="m-0 mb-2 mt-4 pt-sm-1">
                 <a href="/" class="text-decoration-none">
                     {{ if isset .Site.Params "header_title" }}
                         {{ .Site.Params.header_title }}
