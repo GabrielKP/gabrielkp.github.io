@@ -7,7 +7,7 @@ description = "Quantifying Persistent Mental Content"
 tags = [
     "SfN",
 ]
-pdf = "sfn23.svg"
+pdf = "sfn23.pdf"
 +++
 
 {{< svg "static/posters/sfn23.svg" >}}
