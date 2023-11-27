@@ -7,6 +7,7 @@ description = "How are lingering thoughts modulated by time and personal concern
 tags = [
     "ccc",
 ]
+pdf = "ccc.pdf"
 +++
 
 {{< svg "static/posters/ccc.svg" >}}

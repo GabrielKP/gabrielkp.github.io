@@ -4,6 +4,7 @@
 >
   {{- partial "head.html" . -}}
   <body>
+    <a href="/posters/{{ .Params.pdf }}" download="gkp-poster-{{ .Params.pdf }}"><i>Download pdf</i></a>
     <div id="content-poster" class="mx-auto">{{ .Content}}</div>
     {{- partial "footer.html" . -}}
   </body>
