@@ -1,5 +1,10 @@
 # Website
 
+## Setup
+
+1. Install hugo: https://gohugo.io/installation/
+2. Run `hugo server` to show website locally
+
 ## Tools used
 
 - Framwork: https://gohugo.io/
