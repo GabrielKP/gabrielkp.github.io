@@ -9,10 +9,10 @@ copyright = "&copy; 2023, Gabriel Kressin Palacios"
 # Main menu items
 [menu]
   [[menu.main]]
-    identifier = "posters"
-    name = "Posters"
-    title = "Posters"
-    url = "/posters/"
+    identifier = "conferences"
+    name = "Conferences"
+    title = "Conference"
+    url = "/conferences/"
     weight = -110
 
 # Configuration Features
@@ -22,7 +22,7 @@ copyright = "&copy; 2023, Gabriel Kressin Palacios"
   header_subtitle = "What are the algorithms of the mind?" # Your header subtitle
   home_image = "/steg.sq.jpg"          # Path to header image starting from the static directory
   recent_posts = 6                           # Max amount of recent posts to show
-  mainSections = ["poster"]   # Main sections to include in recent posts
+  mainSections = ["poster", "presentation"]   # Main sections to include in recent posts
   [params.style]                             # CSS style overrides
     backgroundColor = "#f8f9fa"
     homeImageBorderColor = "#ffffff"
