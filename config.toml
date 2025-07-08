@@ -1,4 +1,4 @@
-baseURL = 'http://gabrielkp.github.io'
+baseURL = 'https://gabrielkp.github.io'
 languageCode = 'en-us'
 title = 'Gabriel Kressin Palacios'
 relativeURLs = true
@@ -26,6 +26,12 @@ copyright = "&copy; 2025, Gabriel Kressin Palacios"
     title = "Interests"
     url = "#interests"
     weight = 3
+  [[menu.main]]
+    identifier = "fun-facts"
+    name = "Fun 'facts'"
+    title = "Fun 'facts'"
+    url = "#fun-facts"
+    weight = 4
 
 # Configuration Features
 [params]
@@ -37,6 +43,13 @@ copyright = "&copy; 2025, Gabriel Kressin Palacios"
   recent_posts = 6                           # Max amount of recent posts to show
   presentationTypes = ["poster", "presentation"]   # entries to include in 'Poster presentations'
   publicationTypes = ["publication"]
+
+  # SEO and Meta Tags Configuration
+  [params.seo]
+    keywords = "Gabriel Kressin Palacios, neuroscience, cognitive science, Johns Hopkins University, research, psychology, brain, cognition"
+    author = "Gabriel Kressin Palacios"
+    geo_region = "US-MD"
+    geo_placename = "Baltimore"
   [params.style]                             # CSS style overrides
     backgroundColor = "#f8f9fa"
     homeImageBorderColor = "#ffffff"
@@ -44,7 +57,7 @@ copyright = "&copy; 2025, Gabriel Kressin Palacios"
     fontColor = "#212529"
   [[params.social]]
     fa_icon = "fab fa-github fa-lg"          # Font Awesome icon class
-    href = "http://github.com/gabrielkp"      # Link to associate with icon (http://, https://, mailto:)
+    href = "https://github.com/gabrielkp"      # Link to associate with icon (http://, https://, mailto:)
   [[params.social]]
     name = "Bluesky"
     custom_icon = "/bluesky-icon.svg"

@@ -1,14 +1,68 @@
 <head>
-  <title>{{ .Site.Params.title }}</title>
+  <title>
+    {{ if .IsHome }}{{ .Site.Params.title }}{{ else }}{{ .Title }} | {{
+    .Site.Params.title }}{{ end }}
+  </title>
   <meta charset="utf-8" />
   <meta
     name="viewport"
     content="width=device-width, initial-scale=1, shrink-to-fit=no"
   />
+
+  <!-- Basic Meta Tags -->
   <meta
     name="description"
     content="{{if .IsHome}}{{ $.Site.Params.description }}{{else}}{{.Description}}{{end}}"
   />
+  <meta
+    name="author"
+    content="{{ if .Site.Params.seo.author }}{{ .Site.Params.seo.author }}{{ else }}{{ .Site.Params.title }}{{ end }}"
+  />
+  <meta name="robots" content="index, follow" />
+  <meta name="language" content="English" />
+
+  <!-- Open Graph / Facebook -->
+  <meta
+    property="og:type"
+    content="{{ if .IsHome }}website{{ else }}article{{ end }}"
+  />
+  <meta property="og:url" content="{{ .Permalink }}" />
+  <meta
+    property="og:title"
+    content="{{ if .IsHome }}{{ .Site.Params.title }}{{ else }}{{ .Title }}{{ end }}"
+  />
+  <meta
+    property="og:description"
+    content="{{if .IsHome}}{{ $.Site.Params.description }}{{else}}{{.Description}}{{end}}"
+  />
+  <meta property="og:site_name" content="{{ .Site.Params.title }}" />
+  {{ if .Params.author }}
+  <meta property="og:author" content="{{ .Params.author }}" />
+  {{ end }} {{ if .Date }} <meta property="article:published_time" content="{{
+  .Date.Format "2006-01-02T15:04:05Z07:00" }}" /> {{ end }} {{ if .Lastmod }}
+  <meta property="article:modified_time" content="{{ .Lastmod.Format
+  "2006-01-02T15:04:05Z07:00" }}" /> {{ end }} {{ if .Site.Params.home_image }}
+  <meta
+    property="og:image"
+    content="{{ .Site.BaseURL }}{{ .Site.Params.home_image }}"
+  />
+  <meta property="og:image:width" content="210" />
+  <meta property="og:image:height" content="210" />
+  {{ end }}
+
+  <!-- Additional SEO Meta Tags -->
+  {{ if .Site.Params.seo.keywords }}
+  <meta name="keywords" content="{{ .Site.Params.seo.keywords }}" />
+  {{ end }} {{ if .Site.Params.seo.geo_region }}
+  <meta name="geo.region" content="{{ .Site.Params.seo.geo_region }}" />
+  {{ end }} {{ if .Site.Params.seo.geo_placename }}
+  <meta name="geo.placename" content="{{ .Site.Params.seo.geo_placename }}" />
+  {{ end }}
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="{{ .Permalink }}" />
+
+  <!-- Favicons and App Icons -->
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />

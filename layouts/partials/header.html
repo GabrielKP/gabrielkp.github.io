@@ -1,6 +1,8 @@
 <header class="container mt-sm-5 mt-4 mb-4 mt-xs-1">
   <div class="row">
-    <div class="col-sm-4 col-12 text-sm-right text-center pt-sm-0">
+    <div
+      class="col-md-4 col-12 text-md-right text-center pt-md-0 order-1 order-md-1"
+    >
       <a href="/" class="text-decoration-none">
         <img id="home-image" class="rounded-circle" {{ if (and (isset
         .Site.Params "home_image") (fileExists (printf "static/%s"
@@ -10,7 +12,7 @@
         else }} src="/images/avatar.png" {{ end }} />
       </a>
     </div>
-    <div class="col-sm-7 col-12">
+    <div class="col-md-7 col-12 order-2 order-md-2">
       <h1 class="m-0 mb-2 mt-4 pt-sm-4 text-md-start text-center">
         <a href="/" class="text-decoration-none">
           {{ if isset .Site.Params "header_title" }} {{
@@ -39,7 +41,7 @@
       <ul id="nav-social" class="list-inline text-md-start text-center">
         {{ range .Site.Params.social }}
         <li class="list-inline-item me-4">
-          <a href="{{ .href }}" target="_blank">
+          <a href="{{ .href }}" target="_blank" rel="noopener noreferrer">
             {{ if .custom_icon }}
             <img
               src="{{ .custom_icon }}"
