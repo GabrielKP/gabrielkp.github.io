@@ -1,5 +1,5 @@
 <head>
-  <title>{{ .Params.title }}</title>
+  <title>{{ .Site.Params.title }}</title>
   <meta charset="utf-8" />
   <meta
     name="viewport"
@@ -26,5 +26,5 @@
   "sass/custom.scss" }} {{ if $customTemplate }} {{ $custom := $customTemplate |
   resources.ExecuteAsTemplate "css/custom.scss" . | toCSS | minify }}
   <link rel="stylesheet" href="{{ $custom.RelPermalink }}" />
-  {{ end }} {{ template "_internal/google_analytics.html" . }}
+  {{ end }}
 </head>

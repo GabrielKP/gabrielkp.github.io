@@ -3,39 +3,57 @@ languageCode = 'en-us'
 title = 'Gabriel Kressin Palacios'
 relativeURLs = true
 enableEmoji = true
-copyright = "&copy; 2023, Gabriel Kressin Palacios"
+copyright = "&copy; 2025, Gabriel Kressin Palacios"
 
 
 # Main menu items
 [menu]
   [[menu.main]]
-    identifier = "conferences"
-    name = "Conferences"
-    title = "Conference"
-    url = "/conferences/"
-    weight = -110
+    identifier = "publications"
+    name = "Publications"
+    title = "Publications"
+    url = "#publications"
+    weight = 1
+  [[menu.main]]
+    identifier = "presentations"
+    name = "Presentations"
+    title = "Presentations"
+    url = "#presentations"
+    weight = 2
+  [[menu.main]]
+    identifier = "interests"
+    name = "Interests"
+    title = "Interests"
+    url = "#interests"
+    weight = 3
 
 # Configuration Features
 [params]
-  description = "Personal Website | Gabriel Kressin Palacios"      # Your meta description of the site
-  header_title = "Gabriel Kressin Palacios"                 # Your header title
+  title = "Gabi Kressin Palacios"
+  description = "Personal Website | Gabi Kressin Palacios"      # Your meta description of the site
+  header_title = "Gabi Kressin Palacios"                 # Your header title
   header_subtitle = "What are the algorithms of the mind?" # Your header subtitle
-  home_image = "/steg.sq.jpg"          # Path to header image starting from the static directory
+  home_image = "/laguna.jpg"          # Path to header image starting from the static directory
   recent_posts = 6                           # Max amount of recent posts to show
-  mainSections = ["poster", "presentation"]   # Main sections to include in recent posts
+  presentationTypes = ["poster", "presentation"]   # entries to include in 'Poster presentations'
+  publicationTypes = ["publication"]
   [params.style]                             # CSS style overrides
     backgroundColor = "#f8f9fa"
     homeImageBorderColor = "#ffffff"
     fontFamilyBase = "Helvetica Neue"        # First-choice font
     fontColor = "#212529"
   [[params.social]]
-    fa_icon = "fab fa-github fa-1x"          # Font Awesome icon class
+    fa_icon = "fab fa-github fa-lg"          # Font Awesome icon class
     href = "http://github.com/gabrielkp"      # Link to associate with icon (http://, https://, mailto:)
   [[params.social]]
-    fa_icon = "fab fa-linkedin-in fa-1x"
+    name = "Bluesky"
+    custom_icon = "/bluesky-icon.svg"
+    href = "https://bsky.app/profile/gkre.bsky.social"
+  [[params.social]]
+    fa_icon = "fab fa-linkedin-in fa-lg"
     href = "https://www.linkedin.com/in/gabrielkressin/"
   [[params.social]]
-    fa_icon = "fa fa-envelope fa-1x"
+    fa_icon = "fa fa-envelope fa-lg"
     href = "mailto:gkressi1@jhu.edu"
 
 [markup.goldmark.renderer]

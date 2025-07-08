@@ -1,0 +1,62 @@
+<div class="pl-sm-4 ml-sm-5 pt-1">
+  <div class="row">
+    <div class="col-12">
+      {{ $recent := 40 }} {{ if gt $recent 0 }}
+      <div class="pb-2">
+        <!-- <h5><span class="badge category">Publications</span></h5> -->
+        <h3 id="publications">Publications</h3>
+        <ul class="list-unstyled">
+          {{ range first $recent (where .Site.RegularPages "Type" "in"
+          site.Params.publicationTypes) }}
+          <div class="pb-3">
+            <li>
+              <a
+                href="{{ .Params.link }}"
+                target="_blank"
+                rel="noopener noreferrer"
+                >{{ .Params.medium }}</a
+              >
+              - {{ .Params.citation | markdownify }}
+            </li>
+          </div>
+          {{ end }}
+        </ul>
+      </div>
+      {{ end }} {{ $recent := 40 }} {{ if gt $recent 0 }}
+      <div class="pb-2">
+        <!-- <h5><span class="badge category">Presentations</span></h5> -->
+        <h3 id="presentations">Presentations</h3>
+        <ul class="list-unstyled">
+          {{ range first $recent (where .Site.RegularPages "Type" "in"
+          site.Params.presentationTypes) }}
+          <div class="pb-3">
+            {{ if eq .Params.type "poster"}}
+            <li>
+              <a
+                href="/posters/{{ .Params.pdf }}"
+                download="gkp-poster-{{ .Params.pdf }}"
+                target="_blank"
+                rel="noopener noreferrer"
+                >poster</a
+              >
+              - {{ .Params.citation | markdownify }}
+            </li>
+            {{ else }}
+            <li>
+              <a
+                href="{{ .Permalink }}"
+                target="_blank"
+                rel="noopener noreferrer"
+                >{{ .Params.medium }}</a
+              >
+              - {{ .Params.citation | markdownify }}
+            </li>
+            {{ end }}
+          </div>
+          {{ end }}
+        </ul>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</div>

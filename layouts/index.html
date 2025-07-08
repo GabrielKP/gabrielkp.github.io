@@ -1,14 +1,80 @@
 {{ define "main" }}
-    <!-- To overwrite the default content for the theme which shows posts by 
-         category, populate your content/_index.html file. It will be rendered
-         instead of the default. For details on this configuration capability,
-         see https://gohugo.io/templates/homepage/#add-content-and-front-matter-to-the-homepage
-    -->
-    {{ if .Content }}
-        <div class="pl-sm-4 ml-sm-5">
-            {{ .Content }}
+<div>
+  <div class="pl-sm-3 ml-sm-5 pb-3">
+    {{ with .Site.GetPage "index/upper" }} {{ .Content}} {{ end }}
+  </div>
+  <div class="pl-sm-4 ml-sm-5 pt-1">
+    <div class="row">
+      <div class="col-12">
+        {{ $recent := 40 }} {{ if gt $recent 0 }}
+        <div class="pb-2">
+          <!-- <h5><span class="badge category">Publications</span></h5> -->
+          <h3 id="publications">Publications</h3>
+          <ul class="list-unstyled">
+            {{ range first $recent (where .Site.RegularPages "Type" "in"
+            site.Params.publicationTypes) }}
+            <div class="pb-3">
+              <li>
+                <a
+                  href="{{ .Params.link }}"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >{{ .Params.medium }}</a
+                >
+                - {{ .Params.citation | markdownify }}
+              </li>
+            </div>
+            {{ end }}
+          </ul>
         </div>
-    {{ else }}
-        {{- partial "category-posts.html" . -}}
-    {{ end }}
+        {{ end }} {{ $recent := 40 }} {{ if gt $recent 0 }}
+        <div class="pb-2">
+          <!-- <h5><span class="badge category">Presentations</span></h5> -->
+          <h3 id="presentations">Presentations</h3>
+          <ul class="list-unstyled">
+            {{ range first $recent (where .Site.RegularPages "Type" "in"
+            site.Params.presentationTypes) }}
+            <div class="pb-3">
+              {{ if eq .Params.type "poster"}}
+              <li>
+                <a
+                  href="/posters/{{ .Params.pdf }}"
+                  download="gkp-poster-{{ .Params.pdf }}"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  {{
+                  if
+                  .Params.id
+                  }}
+                  id="{{.Params.id}}"
+                  {{
+                  end
+                  }}
+                  >poster</a
+                >
+                - {{ .Params.citation | markdownify }}
+              </li>
+              {{ else }}
+              <li>
+                <a
+                  href="{{ .Permalink }}"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >{{ .Params.medium }}</a
+                >
+                - {{ .Params.citation | markdownify }}
+              </li>
+              {{ end }}
+            </div>
+            {{ end }}
+          </ul>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+  <div class="pl-sm-3 ml-sm-5">
+    {{ with .Site.GetPage "index/lower" }} {{ .Content}} {{ end }}
+  </div>
+</div>
 {{ end }}
