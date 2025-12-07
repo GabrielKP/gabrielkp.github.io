@@ -29,7 +29,7 @@ Let's see what the future holds. -->
 
 - People tell me I look shorter on zoom than in real life.
 - I was an uncle (second degree) before I was born.
-- If you substitute *context* in <a href="https://osf.io/preprints/psyarxiv/dghnf" target="_blank" rel="noopener noreferrer">ourpaper</a> with *state* it sounds pretty scary. (link needed)
+- If you substitute *context* in <a href="https://osf.io/preprints/psyarxiv/dghnf" target="_blank" rel="noopener noreferrer">our paper</a> with *state* it sounds pretty scary.
 - Because I grew up bilingually, I sometimes confuse numbers in the range of
   60-99: in German you say the last position first; in Spanish it is the other way
   around. (For some reason I only seem to make this error for numbers >60).
