@@ -60,6 +60,15 @@ $fa-font-path: "../webfonts";
   background-color: $body-color;
 }
 
+// Wrap the work's title in <span class="pub-title">…</span> inside a citation
+// to pick this up.
+$publication-title-color: #002d72;
+
+// Per-entry override: set `titleColor = "#aa3355"` in an entry's [params].
+.pub-title {
+  color: var(--pub-title-color, #{$publication-title-color});
+}
+
 .highlight > pre {
   padding: 0.5rem 0.8rem;
   border: 1px solid;

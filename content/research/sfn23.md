@@ -7,7 +7,7 @@ description = "Quantifying Persistent Mental Content"
 pdf = "sfn23.pdf"
 [params]
     medium = "Poster"
-    citation = "**Kressin Palacios, G.**, Bellana, B., & Honey, C. J. (2023). Quantifying persistent mental content. *Society for Neuroscience Annual Meeting*, Washington, DC."
+    citation = '**Kressin Palacios, G.**, Bellana, B., & Honey, C. J. (2023). <span class="pub-title">**Quantifying persistent mental content**</span>. *Society for Neuroscience Annual Meeting*, Washington, DC.'
 +++
 
 {{< svg "static/posters/sfn23.svg" >}}

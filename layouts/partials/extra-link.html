@@ -1,0 +1,17 @@
+{{/* Optional extra link for a publication/presentation entry, rendered between
+     the medium link and the citation, e.g. "poster - extended abstract - ...".
+     Front matter:
+       [params]
+         extraName = "extended abstract"
+         extraLink = "https://example.org/abstract.pdf"   # or "/posters/foo.pdf"
+
+     Call with: {{ partial "extra-link.html" (dict "page" . "sep" true) }}
+     `sep` draws the " - " separating it from a preceding link; pass false when
+     this is the first link of the entry.
+*/}}
+{{ $page := .page }}
+{{ with $page.Params.extraLink }}{{ if $.sep }} - {{ end }}
+<a href="{{ . }}" target="_blank" rel="noopener noreferrer"
+  >{{ $page.Params.extraName | default "link" }}</a
+>
+{{ end }}

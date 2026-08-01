@@ -6,5 +6,7 @@ type = "poster"
 pdf = "ccn24.pdf"
 [params]
     medium = "Poster"
-    citation = "**Kressin Palacios, G.**, Bellana, B., & Honey, C. J. (2024). Origin and control of persistent mental content. *Conference on Cognitive Computational Neuroscience*, Boston, MA."
+    extraName = "extended abstract"
+    extraLink = "https://2024.ccneuro.org/pdf/609_Paper_authored_kressin_bellana_honey_2024_ccn.pdf"
+    citation = '**Kressin Palacios, G.**, Bellana, B., & Honey, C. J. (2024). <span class="pub-title">**Origin and control of persistent mental content**</span>. *Conference on Cognitive Computational Neuroscience*, Boston, MA.'
 +++

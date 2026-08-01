@@ -13,7 +13,7 @@
           <ul class="list-unstyled">
             {{ range first $recent (where .Site.RegularPages "Type" "in"
             site.Params.publicationTypes) }}
-            <div class="pb-3">
+            <div class="pb-3" {{ with .Params.titleColor }}style="--pub-title-color: {{ . | safeCSS }}"{{ end }}>
               <li>
                 <a
                   href="{{ .Params.link }}"
@@ -21,6 +21,7 @@
                   rel="noopener noreferrer"
                   >{{ .Params.medium }}</a
                 >
+                {{ partial "extra-link.html" (dict "page" . "sep" true) }}
                 - {{ .Params.citation | markdownify }}
               </li>
             </div>
@@ -34,12 +35,14 @@
           <ul class="list-unstyled">
             {{ range first $recent (where .Site.RegularPages "Type" "in"
             site.Params.presentationTypes) }}
-            <div class="pb-3">
+            <div class="pb-3" {{ with .Params.titleColor }}style="--pub-title-color: {{ . | safeCSS }}"{{ end }}>
               {{ if eq .Params.type "poster"}}
+              {{ $pdf := .Params.pdf | default "" }}
               <li>
+                {{ if $pdf }}
                 <a
-                  href="/posters/{{ .Params.pdf }}"
-                  download="gkp-poster-{{ .Params.pdf }}"
+                  href="/posters/{{ $pdf }}"
+                  download="gkp-poster-{{ $pdf }}"
                   target="_blank"
                   rel="noopener noreferrer"
                   {{
@@ -50,18 +53,21 @@
                   {{
                   end
                   }}
-                  >poster</a
+                  >{{ .Params.linkName | default "poster" }}</a
                 >
+                {{ end }}
+                {{ partial "extra-link.html" (dict "page" . "sep" (ne $pdf "")) }}
                 - {{ .Params.citation | markdownify }}
               </li>
               {{ else }}
               <li>
                 <a
-                  href="{{ .Permalink }}"
+                  href="{{ .Params.link | default .Permalink }}"
                   target="_blank"
                   rel="noopener noreferrer"
                   >{{ .Params.medium }}</a
                 >
+                {{ partial "extra-link.html" (dict "page" . "sep" true) }}
                 - {{ .Params.citation | markdownify }}
               </li>
               {{ end }}

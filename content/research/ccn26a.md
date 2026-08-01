@@ -6,5 +6,9 @@ type = "poster"
 pdf = "ccn26-pmc.pdf"
 [params]
     medium = "Poster"
-    citation = "**Kressin Palacios, G.**, Li, X., Ouyang, T., Bellana, B., & Honey, C. J. (2026). Cognitive and Neural Origins of Persistent Experiences. *Conference on Cognitive Computational Neuroscience*, New York, NY."
+    linkName = "spotlight poster"
+    extraName = "extended abstract"
+    extraLink = "https://openreview.net/pdf?id=z78Zk8Ybsz"
+    citation = '**Kressin Palacios, G.**, Li, X., Ouyang, T., Bellana, B., & Honey, C. J. (2026). <span class="pub-title">**Cognitive and Neural Origins of Persistent Experiences**</span>. *Conference on Cognitive Computational Neuroscience*, New York, NY.'
+    titleColor = "#002d72"
 +++

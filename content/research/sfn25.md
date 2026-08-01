@@ -7,5 +7,5 @@ description = "Neural Origins of Persistent Mental Content"
 pdf = "sfn25.pdf"
 [params]
     medium = "Poster"
-    citation = "**Kressin Palacios, G.**, Li, X., Lai, Yijun, Bellana, B., & Honey, C. J. (2025). Neural Origins of Persistent Mental Content. *Society for Neuroscience Annual Meeting*, San Diego."
+    citation = '**Kressin Palacios, G.**, Li, X., Lai, Yijun, Bellana, B., & Honey, C. J. (2025). <span class="pub-title">**Neural Origins of Persistent Mental Content**</span>. *Society for Neuroscience Annual Meeting*, San Diego.'
 +++
