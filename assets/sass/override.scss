@@ -88,6 +88,19 @@ p {
   margin-bottom: 0.7rem;
 }
 
+// In "loose" markdown lists (blank lines between items) goldmark wraps each
+// item's text in a <p>, whose bottom margin lands between an item and its own
+// sub-list. Drop it and put the spacing after the sub-list instead, so items
+// stay flush with their subitems and groups are separated from what follows.
+li > p {
+  margin-bottom: 0;
+}
+
+li > ul,
+li > ol {
+  margin-bottom: 0.7rem;
+}
+
 header {
   h1, h2 {
     a, a:hover {

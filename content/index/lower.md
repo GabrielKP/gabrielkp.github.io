@@ -27,7 +27,7 @@ Let's see what the future holds. -->
 
 ### Fun 'facts'
 
-- People tell me I look shorter on zoom than in real life.
+- People tell me I look shorter on zoom than in real life *(2026 update: it still happens)*.
 - I was an uncle (second degree) before I was born.
 - If you substitute *context* in <a href="https://osf.io/preprints/psyarxiv/dghnf" target="_blank" rel="noopener noreferrer">our paper</a> with *state* it sounds pretty scary.
 - Because I grew up bilingually, I sometimes confuse numbers in the range of
